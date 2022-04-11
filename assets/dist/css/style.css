@@ -514,6 +514,11 @@ h1.misPuntos__bannerHero-title{
     margin: 0;
 }
 
+h1.misPuntos__tableTitulo{
+    color: #333;
+    font-size: 1.5rem;
+}
+
 th > div.misPuntos__tablaCelda{
     border: 1px solid #999999;
     width: 100%;
