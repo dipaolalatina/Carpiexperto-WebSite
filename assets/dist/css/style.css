@@ -458,3 +458,80 @@ div.registro__buttonContainer{
         text-align: right;
     }
 }
+
+/*Mis Puntos*/
+
+.misPuntos__bannerHero{
+    background-image: url('../../images/home/home__bannerHero-bg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.misPuntos__bannerHero-height{
+    height: 280px;
+}
+
+h1.misPuntos__bannerHero-title{
+    color: #fff;
+    text-shadow: 5px 5px 5px #333333;
+}
+
+.misPuntos__ptosDisponibles{
+    background-color: #EA1F27;
+    color: #fff;
+    text-align: center;
+    padding: 17px 0px;
+}
+
+.misPuntos__ptosDisponibles >  h1{
+    margin: 0;
+}
+
+.misPuntos__ptosDisponibles > h3{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.misPuntos__ptosHistorial{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 17px 0px;
+}
+
+.misPuntos__ptosHistorial > div.row > div > h1{
+    margin: 0;
+}
+
+.misPuntos__ptosHistorial > div.row > div > h3{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.misPuntos__ptosHistorial > div.row > div > h5{
+    font-size: .8rem;
+    margin: 0;
+}
+
+th > div.misPuntos__tablaCelda{
+    border: 1px solid #999999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Gotham Black Regular';
+    color: #333;
+    padding: 10px 10px;
+    font-size: 1.3rem;
+}
+
+td > div.misPuntos__tablaCelda{
+    border: 1px solid #999999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Gotham Book';
+    color: #333;
+    padding: 10px 10px;
+    font-size: 1rem;
+}
