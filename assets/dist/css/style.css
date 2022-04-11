@@ -17,6 +17,10 @@
     font-weight: 500;
 }
 
+*:focus {
+    outline: none;
+}
+
 html, body{
     color: #606161;
     font-family: 'Gotham Book', sans-serif;
@@ -28,6 +32,11 @@ html, body{
 h1, h2, h3, h3, h4, h5, h6{
     font-family: 'Gotham Black Regular';
 }
+
+/* Colors */
+
+.c-red{color: #EA1F27!important;}
+.c-green{color: #8CC63F!important;}
 
 .navbar{
     background-color: #fff;
@@ -228,4 +237,224 @@ h5.home__picto-title{
 
 img.home__picto-img{
     width: 66%;
+}
+
+/* Registro */
+
+.registro__bannerHero{
+    background-image: url('../../images/home/home__bannerHero-bg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registro__bannerHero-height{
+    height: 280px;
+}
+
+h1.registro__bannerHero-title{
+    color: #fff;
+    text-shadow: 5px 5px 5px #333333;
+}
+
+.registro__ptosDisponibles{
+    background-color: #EA1F27;
+    color: #fff;
+    text-align: center;
+    padding: 17px 0px;
+}
+
+.registro__ptosDisponibles >  h1{
+    margin: 0;
+}
+
+.registro__ptosDisponibles > h3{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.registro__ptosHistorial{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 17px 0px;
+}
+
+.registro__ptosHistorial > div.row > div > h1{
+    margin: 0;
+}
+
+.registro__ptosHistorial > div.row > div > h3{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.registro__ptosHistorial > div.row > div > h5{
+    font-size: .8rem;
+    margin: 0;
+}
+
+img.registro__iconUser{
+    width: 33%;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) { 
+    img.registro__iconUser{
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+h2.registro__titluloRegistro{
+    color: #333;
+}
+
+.registro__bajadaRegistro{
+    font-family: 'Gotham Book';
+    font-size: .9rem;
+    color: #635858;
+}
+
+input.registro__inputText{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #EA1F27;
+    border-radius: 0;
+    font-family: 'Gotham Black Regular';
+    color: #CCCCCC;
+    outline: none
+}
+
+input.registro__inputText:focus{
+    outline: none;
+    border-bottom: 2px solid #EA1F27;
+}
+
+input.registro__inputText::placeholder{
+    color: #CCCCCC;
+}
+
+select.registro__inputSelect{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #EA1F27;
+    border-radius: 0;
+    font-family: 'Gotham Black Regular';
+    color: #CCCCCC;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='red' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
+
+select.registro__inputSelect > option{
+    color: #333;
+    font-family: 'Gotham Book';
+}
+
+label.registro__labelCheckbox{
+  color: #333;
+  font-family: 'Gotham Book';
+  font-size: .8rem;
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.registro__labelCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.registro__checkmark {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+.registro__labelCheckbox input:checked ~ .registro__checkmark {
+    background-color: #EA1F27;
+}
+
+.registro__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.registro__labelCheckbox input:checked ~ .registro__checkmark:after {
+    display: block;
+}
+
+/* .registro__labelCheckbox .registro__checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} */
+
+input#reg__fechaNacimiento{
+    background-image: url('../../images/registro/registro__iconCalendario.svg');
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 10%;    
+}
+
+.registro__historialTitulo{
+    font-family: 'Gotham Black Regular';
+    color: #333333;
+}
+
+p.registro__historialSubtiulo{
+    font-size: .8rem;
+}
+
+button.registro__button{
+    background-color: #EA1F27;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+    font-family: 'Gotham Black Regular';
+    border-radius: 0;
+}
+
+button.registro__button:hover{
+    background-color: #741014;
+    color: #fff;
+}
+
+div.registro__buttonContainer{
+    text-align: center;
+}
+
+@media (min-width: 711px) { 
+    div.registro__buttonContainer{
+        text-align: right;
+    }
 }
