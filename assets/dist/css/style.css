@@ -89,13 +89,21 @@ a.nav-link.active{
 
 @media (min-width: 992px) { 
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: .9rem;
+        padding-left: .9rem;
         font-size: 1.3rem;
     }
 }
 
 @media (min-width: 1200px) { 
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1440px) { 
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 2.5rem;
         padding-left: 2.5rem;
@@ -539,4 +547,110 @@ td > div.misPuntos__tablaCelda{
     color: #333;
     padding: 10px 10px;
     font-size: 1rem;
+}
+
+/* Catálogo */
+
+.catalogo__bannerHero{
+    background-image: url('../../images/home/home__bannerHero-bg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.catalogo__bannerHero-height{
+    height: 280px;
+}
+
+h1.catalogo__bannerHero-title{
+    color: #fff;
+    text-shadow: 5px 5px 5px #333333;
+}
+
+a.catalogo__bannerHero-cta{
+    background-color: #EA1F27;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.3rem;
+    font-family: 'Gotham Black Regular';
+}
+
+a.catalogo__bannerHero-cta:hover{
+    background-color: #741014;
+}
+
+.catalogo__itemTitulo{
+    font-family: 'Gotham Black Regular';
+    color: #333333;
+}
+
+p.catalogo__itemSubtiulo{
+    font-size: .8rem;
+}
+
+ul.catalogo__categoriasDesk{
+    display: none;
+}
+
+@media (min-width: 711px) { 
+    ul.catalogo__categoriasDesk{
+        list-style: none;
+        display: block;
+    }
+}
+
+ul.catalogo__categoriasDesk > li.catalogo__categoriasDesk-item{
+    font-family: 'Gotham Black Regular';
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+
+ul.catalogo__categoriasDesk > li.catalogo__categoriasDesk-item > a{
+    color: #333;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+ul.catalogo__categoriasDesk > li.catalogo__categoriasDesk-item > a:hover{
+    color: #999999;
+    text-decoration: none;
+}
+
+ul.catalogo__categoriasDesk > li.catalogo__categoriasDesk-item.active > a{
+    color: #EA1F27!important;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+select.categoria__inputSelect{
+    display: block;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #EA1F27;
+    border-radius: 0;
+    font-family: 'Gotham Black Regular';
+    color: #CCCCCC;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='red' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
+
+select.categoria__inputSelect > option{
+    color: #333;
+    font-family: 'Gotham Book';
+}
+
+@media (min-width: 711px) { 
+    select.categoria__inputSelect{
+        display: none;
+    }
 }
