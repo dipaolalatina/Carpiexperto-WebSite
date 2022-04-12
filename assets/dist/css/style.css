@@ -562,6 +562,19 @@ td > div.misPuntos__tablaCelda{
     font-size: 1rem;
 }
 
+a.misPuntos__pageLink{
+    color: #333;
+}
+
+a.misPuntos__pageLink:hover{
+    color: #333;
+}
+
+.misPuntos__pageItem.active > .misPuntos__pageLink{
+    background-color: #EA1F27!important;
+    border-color: #EA1F27;
+}
+
 /* Catálogo */
 
 .catalogo__bannerHero{
