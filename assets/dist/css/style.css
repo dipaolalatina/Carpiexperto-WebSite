@@ -467,6 +467,19 @@ div.registro__buttonContainer{
     }
 }
 
+a.registro__pageLink{
+    color: #333;
+}
+
+a.registro__pageLink:hover{
+    color: #333;
+}
+
+.registro__pageItem.active > .registro__pageLink{
+    background-color: #EA1F27!important;
+    border-color: #EA1F27;
+}
+
 /*Mis Puntos*/
 
 .misPuntos__bannerHero{
@@ -653,4 +666,17 @@ select.categoria__inputSelect > option{
     select.categoria__inputSelect{
         display: none;
     }
+}
+
+a.catalogo__pageLink{
+    color: #333;
+}
+
+a.catalogo__pageLink:hover{
+    color: #333;
+}
+
+.catalogo__pageItem.active > .catalogo__pageLink{
+    background-color: #EA1F27!important;
+    border-color: #EA1F27;
 }
