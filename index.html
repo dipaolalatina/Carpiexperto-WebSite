@@ -7,10 +7,14 @@
     <meta name="author" content="di Paola Latina">
     <meta name="generator" content="Sipa">
     <title>Carpiexperto</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet">     
     <!-- Custom styles for this template -->
     <link href="assets/dist/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/locales/bootstrap-datepicker.es.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -110,6 +114,145 @@
             <img src="assets/images/home/home__video-2.jpg" class="w-100" alt="">
           </div>
         </div>
+        <div class="row mt-5">
+          <div class="col-6">
+            <!-- Button modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLogin">
+              Modal
+            </button>
+            <!-- Modal-->
+            <div class="modal login__modal fade" id="modalLogin" aria-hidden="true" aria-labelledby="ModalLabel" tabindex="-1">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content login__modalContent">
+                  <div class="modal-header">                    
+                    <button type="button" class="btn-close login__modalBtnCerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <form action="#">
+                    <div class="modal-body">
+                      <h3 class="modal-title login__modalTitulo" id="ModalLabel">Ingreso</h3>
+                      <div class="row mt-3">
+                        <div class="mb-3">
+                          <input type="email" class="form-control login__inputText" id="login__User" placeholder="Correo electrónico">
+                        </div>
+                        <div class="mb-3">
+                          <input type="password" class="form-control login__inputText" id="login__Password" placeholder="Contraseña">
+                        </div>
+                      </div>
+                      <div class="row justify-content-end">
+                        <div class="col-12 col-md-3 text-center">                          
+                          <div class="mb-3">
+                            <button class="btn modalLogin__btnRegistro" data-bs-target="#modalRegistro" data-bs-toggle="modal">Registrarse</button>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 text-center">
+                          <div class="mb-3">
+                            <button class="btn modalLogin__btnLogin" type="submit">Ingresa</button>
+                          </div>
+                          <div class="mb-3">
+                            <a href="#" class="modalLogin__forgot mb-3">¿Olvidaste la contraseña?</a>
+                          </div>                          
+                        </div>
+                      </div> 
+                    </div>
+                  </form>                  
+                </div>
+              </div>
+            </div>
+
+            <div class="modal login__modal fade" id="modalRegistro" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content login__modalContent">
+                  <div class="modal-header">                    
+                    <button type="button" class="btn-close login__modalBtnCerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <img src="assets/images/icon_user.svg" class="modal__iconUser" alt="">
+                        <h2 class="registro__titluloRegistro">
+                          Registrarse
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <form class="col-12" action="#">
+                        <div class="mb-3">
+                          <input type="text" class="form-control registro__inputText" id="reg__nombreCompleto" placeholder="Nombre Completo">
+                        </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control registro__inputText" id="reg__CC" placeholder="CC">
+                        </div>
+                        <div>
+                          <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                              <select class="form-select registro__inputSelect" id="reg__genero" aria-label="Género">
+                                <option selected>Género</option>
+                                <option value="F">Femenino</option>
+                                <option value="M">Masculino</option>
+                              </select>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                              <input class="form-control registro__inputText datepicker" id="reg__fechaNacimiento" placeholder="Fecha de nacimiento">
+                            </div>                 
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <select class="form-select registro__inputSelect" id="reg__ocupacion" aria-label="Ocupación">
+                            <option selected>Ocupación</option>
+                            <option value="Ocupacion 1">Ocupación 1</option>
+                            <option value="Ocupacion 2">Ocupación 2</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <input type="email" class="form-control registro__inputText" id="reg__email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control registro__inputText" id="reg__telefono" placeholder="Teléfono">
+                        </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control registro__inputText" id="reg__direccion" placeholder="Dirección">
+                        </div>
+                        <div class="mb-3">
+                          <select class="form-select registro__inputSelect" id="reg__ciudad" aria-label="Ciudad">
+                            <option selected>Ciudad</option>
+                            <option value="Ciudad 1">Ciudad 1</option>
+                            <option value="Ciudad 2">Ciudad 2</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <input type="password" class="form-control registro__inputText" id="reg__password" placeholder="Contraseña">
+                        </div>
+                        <div class="mb-3">
+                          <div class="form-check">                  
+                            <label class="form-check-label registro__labelCheckbox" for="reg__tyc">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                              <input class="form-check-input registro__inputCheckbox" type="checkbox" value="" id="reg__tyc">
+                              <span class="registro__checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <div class="form-check">                  
+                            <label class="form-check-label registro__labelCheckbox" for="reg__tyc2">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                              <input class="form-check-input registro__inputCheckbox" type="checkbox" value="" id="reg__tyc2">
+                              <span class="registro__checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="mb-3 registro__buttonContainer">
+                          <button type="submit" class="btn registro__button">Registrarme</button>
+                        </div>
+                      </form>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>          
+        </div>
       </div>  
     </main>
     <footer>
@@ -134,7 +277,13 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/popper.min.js"></script>
+    <script>
+      $('.datepicker').datepicker({
+          format: "dd/mm/yyyy",
+          language: "es"
+      });
+    </script>
   </body>
 </html>

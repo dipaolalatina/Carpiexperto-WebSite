@@ -693,3 +693,103 @@ a.catalogo__pageLink:hover{
     background-color: #EA1F27!important;
     border-color: #EA1F27;
 }
+
+/* Modals */
+
+div.login__modalContent{
+    border-radius: 0;
+    box-shadow: 5px 5px 5px #333;
+    border: 0;
+}
+
+.login__modalBtnCerrar{
+    background-image: url('../../images/btn__close.svg');
+    background-color: #EA1F27;
+    border-radius: 30px;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    background-size: 25px;
+    top: 0px;
+    right: 0px;
+    position: relative;    
+}
+
+@media (min-width: 711px) { 
+    .login__modalBtnCerrar{
+        top: -22px;
+        right: -22px;
+    }
+}
+
+.login__modalBtnCerrar:hover{
+    opacity: 1;
+}
+
+.login__modalContent > .modal-header, .login__modalContent > .modal-footer{
+    border: 0;
+    padding: 0;
+}
+
+.login__modalTitulo{
+    color: #333;
+}
+
+button.modalLogin__btnRegistro, button.modalLogin__btnLogin{
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+    font-family: 'Gotham Black Regular';
+    border-radius: 0;
+    width: 75%;
+}
+
+button.modalLogin__btnRegistro:hover, button.modalLogin__btnLogin:hover{
+    color: #fff;
+}
+
+button.modalLogin__btnRegistro{
+    background-color: #333;
+}
+
+button.modalLogin__btnLogin{
+    background-color: #EA1F27;    
+}
+
+a.modalLogin__forgot{
+    font-family: 'Gotham Black Regular';
+    color: #635858;
+    font-size: .8rem;
+}
+
+input.login__inputText{
+    border: 0;
+    border-radius: 0;
+    font-family: 'Gotham Black Regular';
+    color: #CCCCCC;
+    outline: none
+}
+
+input.login__inputText:focus{
+    outline: none;
+    border: 0;
+}
+
+input.login__inputText::placeholder{
+    color: #CCCCCC;
+}
+
+img.modal__iconUser{
+    width: 25%;
+    margin-bottom: 10px;
+    max-width: 100px;
+}
+
+/* @media (min-width: 768px) { 
+    img.modal__iconUser{
+        width: 100%;
+        margin-bottom: 0;
+    }
+} */
